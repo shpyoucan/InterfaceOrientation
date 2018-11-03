@@ -11,7 +11,7 @@ s.name         = "HPInterfaceOrientationManager" # 项目名称
 s.version      = "1.0.0"        # 版本号 与 你仓库的 标签号 对应
 s.license      = "MIT"          # 开源证书
 s.summary      = "Vertical and horizontal screen tools" # 项目简介
-
+s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
 s.homepage     = "https://github.com/shpyoucan/InterfaceOrientation" # 你的主页
 s.source       = { :git => "https://github.com/shpyoucan/InterfaceOrientation.git", :tag => "#{s.version}" }#你的仓库地址，不能用SSH地址
 s.source_files = "InterfaceOrientationManager/*.{h,m}" # 你代码的位置， BYPhoneNumTF/*.{h,m} 表示 BYPhoneNumTF 文件夹下所有的.h和.m文件
